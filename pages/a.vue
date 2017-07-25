@@ -1,15 +1,15 @@
 <template>
   <section class="container">
-    <div>
-      <logo/>
+    <div> 
       <h1 class="title">
         NUXT
       </h1>
       <h2 class="subtitle">
-        aaaaaaaaaaaaaa
+        a page
       </h2>
       <div class="links"> 
-        <router-link to="/b" class="button--green">go b page</router-link>
+        <router-link to="/" class="button--grey">go index page</router-link>
+        <router-link to="/b" class="button--grey">go b page</router-link>
         <p id="pp">sdfsdf</p>
         <button @click="funa">pp</button>
       </div>
@@ -30,7 +30,7 @@ export default {
     Logo
   },
   head: {
-    title: 'aaapage',
+    title: 'a title',
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' }
     ]

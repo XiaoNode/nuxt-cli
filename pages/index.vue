@@ -9,8 +9,10 @@
         Universal Vue.js Application
       </h2>
       <div class="links">
+        <router-link to="/about" class="button--grey">go about page</router-link>
+        <router-link to="/about/history" class="button--grey">go history page</router-link>
         <router-link to="/a" class="button--grey">go a page</router-link>
-        <router-link to="/b" class="button--green">go b page</router-link>  
+        <router-link to="/b" class="button--grey">go b page</router-link>  
       </div>
     </div>
   </section>

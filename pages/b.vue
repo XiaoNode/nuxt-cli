@@ -1,14 +1,14 @@
 <template>
   <section class="container">
-    <div>
-      <logo/>
+    <div> 
       <h1 class="title">
         NUXT
       </h1>
       <h2 class="subtitle">
-        bbbbbbbbbbbbbbbb
+        b page use default title 
       </h2>
       <div class="links"> 
+        <router-link to="/" class="button--grey">go index page</router-link>
         <router-link to="/a" class="button--grey">go a page</router-link>
       </div>
     </div>
@@ -19,12 +19,7 @@
 import Logo from '~components/Logo.vue'
 
 export default {
-  components: {
-    Logo
-  },
-  head: {
-    title: 'bbbbbbbbbbbbba'
-  }
+
 }
 </script>
 
