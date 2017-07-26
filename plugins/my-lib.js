@@ -1,0 +1,1 @@
+alert("lib js");

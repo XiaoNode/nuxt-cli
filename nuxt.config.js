@@ -10,7 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'default description from configuration' }
     ],
     script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
+//    { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
     ],    
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -27,15 +27,22 @@ module.exports = {
     /*
     ** Run ESLINT on save
     */
-    extend (config, ctx) {
-      // if (ctx.isClient) {
-      //   config.module.rules.push({
-      //     enforce: 'pre',
-      //     test: /\.(js|vue)$/,
-      //     loader: 'eslint-loader',
-      //     exclude: /(node_modules)/
-      //   })
-      // }
-    }
+//  extend (config, ctx) {
+//       if (ctx.isClient) {
+//         config.module.rules.push({
+//           enforce: 'pre',
+//           test: /\.(js|vue)$/,
+//           loader: 'eslint-loader',
+//           exclude: /(node_modules)/
+//         })
+//       }
+//  }
+    analyze: true,
+    vendor: [
+      'axios',
+      '~plugins/jquery.js',
+      '~plugins/my-lib.js',
+      '~assets/js/alert.js',
+    ]    
   }
 }

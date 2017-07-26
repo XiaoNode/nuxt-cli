@@ -5,6 +5,7 @@
   "author": "Jone <905044086@qq.com>",
   "private": true,
   "dependencies": {
+    "axios": "^0.16.2",
     "nuxt": "latest"
   },
   "scripts": {

@@ -1,0 +1,1 @@
+alert($('#pp').text())
