@@ -37,13 +37,13 @@ export default {
   },
   methods: {
     funa() {
-      alert($('#pp').text());
+      alert($('#ppp').text());
     }
   }
 }
 </script>
 
-<style rel="stylesheet/scss" lang="scss">
+<style rel="stylesheet/scss" lang="scss" scoped>
 
 /*@import url("../assets/css/common.scss");*/
 
