@@ -1,3 +1,6 @@
+const path = require('path')
+const webpack = require('webpack')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -37,12 +40,18 @@ module.exports = {
 //         })
 //       }
 //  }
+    extend(webpackConfig, { dev, isClient, isServer }) { 
+      webpackConfig.resolve.alias['~static'] = path.join(__dirname, 'static') 
+      webpackConfig.module.rules.push({
+        test: /\.scss$/,
+        loader: 'vue-style-loader!css-loader!sass-loader'
+      })
+    },
     analyze: true,
     vendor: [
       'axios',
-      '~plugins/jquery.js',
-      '~plugins/my-lib.js',
-      '~assets/js/alert.js',
+      '~plugins/jquery.min.js',
+      '~plugins/polyfill.min.js'
     ]    
   }
 }

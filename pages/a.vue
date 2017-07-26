@@ -43,7 +43,10 @@ export default {
 }
 </script>
 
-<style>
+<style rel="stylesheet/scss" lang="scss">
+
+/*@import url("../assets/css/common.scss");*/
+
 .container
 {
   min-height: 100vh;
@@ -79,4 +82,9 @@ export default {
     background: red
   }
 }
+
+.links{
+    background: blue;
+}
+
 </style>
