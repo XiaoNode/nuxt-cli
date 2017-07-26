@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const apiConfig = require('./api.config')
 
 module.exports = {
   /*
@@ -53,5 +54,9 @@ module.exports = {
       '~plugins/jquery.min.js',
       '~plugins/polyfill.min.js'
     ]    
-  }
+  },
+  dev: (process.env.NODE_ENV !== 'production'),
+  env: {
+    baseUrl: apiConfig.baseUrl
+  },
 }
