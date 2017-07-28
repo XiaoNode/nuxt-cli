@@ -51,12 +51,12 @@ module.exports = {
     analyze: true,
     vendor: [
       'axios',
-      '~plugins/jquery.min.js',
-      '~plugins/polyfill.min.js'
+      '~/plugins/jquery.min.js',
+      '~/plugins/polyfill.min.js'
     ]    
   },
   dev: (process.env.NODE_ENV !== 'production'),
   env: {
     baseUrl: apiConfig.baseUrl
-  },
+  }
 }

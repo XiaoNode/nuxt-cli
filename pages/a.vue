@@ -9,21 +9,14 @@
       </h2>
       <div class="links"> 
         <router-link to="/" class="button--grey">go index page</router-link>
-        <router-link to="/b" class="button--grey">go b page</router-link>
-        <p id="pp">sdfsdf</p>
-        <button @click="funa">pp</button>
-      </div>
-      <div class="outer">
-        <div class="inter">
-          hhh
-        </div>
-      </div>
+        <router-link to="/b" class="button--grey">go b page</router-link> 
+      </div> 
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~components/Logo.vue' 
+import Logo from '~/components/Logo.vue' 
 
 export default {
   components: {
@@ -36,16 +29,14 @@ export default {
     ]
   },
   methods: {
-    funa() {
-      alert($('#ppp').text());
-    }
+ 
   }
 }
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
 
-/*@import url("../assets/css/common.scss");*/
+@import url("../assets/css/common.scss");
 
 .container
 {
@@ -82,9 +73,6 @@ export default {
     background: red
   }
 }
-
-.links{
-    background: blue;
-}
+ 
 
 </style>
