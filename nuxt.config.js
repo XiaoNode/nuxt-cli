@@ -3,6 +3,9 @@ const webpack = require('webpack')
 const apiConfig = require('./api.config')
 
 module.exports = {
+  router: {
+    middleware: 'auto'
+  },
   /*
   ** Headers of the page
   */
