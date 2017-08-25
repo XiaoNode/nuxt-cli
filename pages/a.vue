@@ -67,12 +67,4 @@ export default {
 {
   padding-top: 15px;
 }
-.outer{
-  background: green;
-  .inter{
-    background: red
-  }
-}
- 
-
 </style>
