@@ -1,6 +1,7 @@
 # nuxt-cli
 
-> Nuxt.js project
+> Nuxt.js init config project
+* 目前在做一个金融项目，使用了Nuxt.js作为SSR方案，惊叹于Nuxt.js的实现，也在使用的过程中遇到了一些问题，限于Company Pro无法公开，所以先整理出来一些配置项加在了nuxt-cli上，方便后面其他项目使用，避免再撸一遍基础配置了，拿来就用 
 
 ## Build Setup
 
